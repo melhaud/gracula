@@ -1,4 +1,11 @@
+from flask_frozen import Freezer
 from flask import Flask, render_template, send_file
+
+DEBUG = True
+FLATPAGES_AUTO_RELOAD = DEBUG
+FLATPAGES_EXTENSION = '.md'
+FLATPAGES_ROOT = 'content'
+POST_DIR = 'posts'
 
 app = Flask(__name__)
 
