@@ -1,0 +1,4 @@
+{"site_url":"http://localhost:8000",
+"site_title" : "Gracula Project",
+"description" : "Gracula🧛‍♂️🧛‍♀️ is an AI-agent-based scientific papers extractor. It uses GigaChat API to analyse user-uploaded PDF files and build a compilation table dataset out of them.",
+"keywords" : "scientific parser, gigachat"}
