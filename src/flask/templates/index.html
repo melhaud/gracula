@@ -3,10 +3,14 @@
   <meta content="{{ keywords }}" name="keywords"> -->
 {% extends "base.html" %}
 {% block content %}
-<h1>Gracula Project</h1>
+
+{% extends "base.html" %}
+{% block content %}
+{% block header %}
+{% include "header.html" %}
+
+{% endblock %}
 {% endblock %}
 
-<h2>Your CSV database is ready</h2>
-<p>
-    <a href="{{url_for("download_file")}}">Download CSV</a>
-</p>
+
+
