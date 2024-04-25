@@ -4,14 +4,16 @@ Gracula🧛‍♂️🧛‍♀️ is an AI-agent-based scientific papers extract
 
 # ⚙️ How to install 
 
-conda create env --file requirements.txt
+```conda create env --file requirements.txt```
 
 # ☀️ How to use
 
 ## 🌱 how to open interface
+Once requirements have been installed, the website should open locally with Flask.
+### give execution rights to the running script
+```chmod +x run_locally.sh```
+### run the script from the root `gracula` folder
+```./run_locally.sh```
 
-flask run ...
-
-open localhost:800 in browser
 
 ## 🌱 instructions how to use interface
