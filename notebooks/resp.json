@@ -1,0 +1,4 @@
+{
+    "CuI": "{'HTL_name': 'CuI', 'HTL_type': 'inorganic', 'PCE': '6.0', 'V': '0.55', 'J': '17.8', 'FF': '0.62'}",
+    "spiro-OMeTAD": "{'HTL_name': 'spiro-OMeTAD', 'HTL_type': 'small molecule', 'PCE': 7.9, 'V': 0.79, 'J': 16.1, 'FF': 0.61}"
+}

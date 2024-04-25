@@ -1,51 +1,12 @@
-﻿id,HTL_name,HTL_type,J,V,FF,PCE,ref_name,ref_J,ref_V,ref_FF,ref_PCE,year
-2014_0,Li-TFSI+tBP doped spiro,small molecule,19.7,0.97,64,12.66,P3HT,15,1.09,63,9.3,2014
-2014_1,CuI 1.5-2 μm,inorganic,17.8,0.55,62,6,spiro-OMeTAD,17,0.82,65,7.1,2014
-2014_2,CuSCN 600 nm,inorganic,19.2,1.02,58,12.4,w/o HTM,0.1,0.345,50,0.02,2014
-2014_3,"CuSCN 500 nm, 110 deg annealing ",inorganic,14.4,0.72,61.7,6.4,-,-,-,-,-,2014
-2014_4,MoOx 10 nm,small molecule,20.14,0.993,60,12.04,spiro-OMeTAD,19.94,1.011,61.3,12.36,2014
-2014_5,C,inorganic,17.2,0.95,71,11.6,-,-,-,-,-,2014
-2014_6,PSK 23 μm,inorganic,18.73,0.952,57,10.2,w/o HTM,18.15,0.911,64.9,10.73,2014
-2014_7,C,inorganic,18.16,0.77,51,7.26,-,-,-,-,-,2014
-2014_8,C 10-50 μm,inorganic,14.2,1.01,60,8.61,-,-,-,-,-,2014
-2014_9,C 150 nm,inorganic,20.2,1.03,73,15.1,-,-,-,-,-,2014
-2014_10,po-spiro-OMeTAD,small molecule,21.2,1.02,77.6,16.7,spiro-OMeTAD,20.4,1,72.7,15.2,2014
-2014_11,HTM2,small molecule,17.9,0.921,68,11.63,-,18.7,0.936,69,12.08,2014
-2014_12,SGT-405,small molecule,20.28,1.02,71,14.79,spiro-OMeTAD,20.31,1.03,72,15.23,2014
-2014_13,X51,small molecule,16.79,0.88,66,9.8,spiro-OMeTAD,16.82,0.83,73,10.2,2014
-2014_14,H111,small molecule,19.8,1.08,72,15.4,spiro-OMeTAD,19.9,1.05,69,14.4,2014
-2014_15,T103,small molecule,20.3,0.99,61,12.4,spiro-OMeTAD,20.8,0.97,63,12.87,2014
-2014_16,FA-MeOPh,small molecule,18.4,0.92,69,11.9,spiro-OMeTAD,19.87,0.89,72,12.75,2014
-2014_17,OMeTPA-FA,small molecule,20.98,0.97,67,13.63,spiro-OMeTAD,21.57,0.99,68,14.68,2014
-2014_18,Fused-F,small molecule,17.9,1.03,68,12.8,spiro-OMeTAD,17.2,1.02,66,11.7,2014
-2014_19,Triazine-Th-OMeTPA,small molecule,20.74,0.92,66,12.51,spiro-OMeTAD,21.37,0.94,67,13.45,2014
-2014_20,MY11 doped spiro,small molecule,16.8,1,71,11.9,FK102 doped spiro,16.8,0.965,68,11,2014
-2014_21,"Li-TFSI, TBP doped spiro-MeOTAD",small molecule,21.64,1.05,74,17.01,-,-,-,-,-,2014
-2014_22,"Li-TFSI, TBP doped spiro-MeOTAD",small molecule,20.4,1.03,74,15.7,-,-,-,-,-,2014
-2014_23,"Li-TFSI, TBP doped spiro-MeOTAD",small molecule,22.75,1.13,75,19.3,-,-,-,-,-,2014
-2014_24,Li-TFSI and TBP doped spiro-MeOTAD,small molecule,16.4,1.05,66,11.45,-,-,-,-,-,2014
-2014_25,Li-TFSI and TBP doped spiro-MeOTAD,small molecule,21.5,1.02,71,15.9,-,-,-,-,-,2014
-2014_26,TPBC,small molecule,19.32,0.94,72,13.1,spiro-OMeTAD,20.03,0.92,72,13.28,2014
-2014_27,TTF-1,small molecule,19.9,0.86,64,11.03,spiro-OMeTAD,19.8,0.91,63,11.4,2014
-2014_28,H101,small molecule,20.5,1.04,65,13.8,spiro-OMeTAD,18.9,1.05,69,13.7,2014
-2014_29,PTAA,polymer,21.3,1.04,73,16.2,-,-,-,-,-,2014
-2014_30,PIF8-TAA,polymer,8.4,1.51,82,10.4,P3HT,8.5,1.09,79,7.3,2014
-2014_31,P3HT/ SWNT(CG200)- PMMA,hybrid,22.71,1.02,66,15.3,P3HT/SWNT (HiPco) only,20.65,0.85,42,7.4,2014
-2014_32,P3HT+Li–TFSIb+ D-TBPc,polymer,19.1,0.98,66,12.4,pristine P3HT,17.7,0.92,56.2,9.2,2014
-2014_33,P3HT +Li-TFSI/t-BP,polymer,20.1,0.92,74,13.7,P3HT,15.8,0.69,60,6.5,2014
-2014_34,CuSCN,inorganic,17.23,0.57,52,5.12,-,-,-,-,-,2014
-2014_35,CuSCN,inorganic,14.5,0.63,53,4.85,w/o CuSCN,4.6,0.62,46,1.35,2014
-2014_36,PNBA,small molecule,17.5,0.945,68.9,11.4,-,-,-,-,-,2014
-2014_37,TFB,polymer,17.5,0.96,65,10.92,spiro-OMeTAD,16.7,0.93,63,9.78,2014
-2014_38,KTM3,small molecule,10.3,0.99,70.9,7.3,spiro-OMeTAD +FK269 (12 mole%),17.2,1.06,62.5,11.4,2014
-2014_39, DR3TBDTT,small molecule,11.8,0.83,34,3.4,spiro-MeOTAD,7.8,0.73,21,1.2,2014
-2014_40,2TPA-2-DP,small molecule,16.3,0.94,59.7,9.1,-,16.8,0.91,67.1,10.2,2014
-2014_41, PDPPDBTE,polymer,14.4,0.855,74.9,9.2, spiro-MeOTAD,14.3,0.849,62.5,7.6,2014
-2014_42,PTAA,polymer,20,0.94,66,10.9,Spiro-OMeTAD,21.3,0.99,66,13.9,2014
-2014_43,spiro-OMeTAD(TFSI)2,small molecule,11.4,0.703,61,4.91,spiro-OMeTAD,5.37,0.571,40,1.22,2014
-2014_44,10% iridium complex+ spiro-OMeTAD,metal complex,15.9,1.064,64,10.8,10% cobalt complex+f spiro-OMeTAD,15.56,1.085,64,10.8,2014
-2014_45,1,small molecule,16.4,0.992,65,10.5,No HTM,14,0.79,69,7.6,2014
-2014_46,PTB-DCB21,polymer,15.35,0.888,64,8.7,spiro-MeOTAD,17.65,0.845,47,7,2014
-2014_47,PANI-NPs,polymer,17.97,0.877,-,6.29,spiro-MeOTAD,9.8,0.61,-,-,2014
-2014_48,2TPA-2-DP ,polymer,18.82,0.97,70,12.96,spiro-MeOTAD,20.08,0.98,67,13.22,2014
-2014_49,S197,polymer,16.2,1.025,69,11.5,PTTA,15.2,0.953,69,10.1,2014
+,HTL_name,HTL_type,PCE,V,J,FF,paper
+0,CuI,inorganic,6.0,0.55,17.8,0.62,2014_1
+1,Spiro-OMeTAD,small molecule,7.9,0.79,16.1,0.61,2014_1
+2,spiro-MeOTAD,small molecule,12.36,1.011,19.94,0.613,2014_4
+3,CuSCN,inorganic,6.4,0.49,14.4,61.7,2014_3
+4,spiroyOMeTAD,small molecule,28,0.95,22,0.7,2014_3
+5,CH3NH3PbI3,hybrid,not mentioned,not mentioned,not mentioned,not mentioned,2014_5
+6,C,carbon soot nanoparticles,9.63,0.96,16.30,0.67,2014_5
+7,FTO,inorganic,,4.70 eV,,,2014_5
+8,CuSCN,inorganic,11.2,1016,19.6,0.56,2014_2
+9,CH3NH3PbI3(1/C2PbI2),inorganic,3.5,0.829,8.0,0.52,2014_2
+10,CH3NH3PbI3(2/C2PbI2),inorganic,6.7,898,11.9,0.6,2014_2

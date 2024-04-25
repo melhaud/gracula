@@ -1,9 +1,11 @@
 {
     "object_type": "hole-transport material",
-    "HTL_name": "hole-transport layer material (aliases: HTM) (e.g. Spiro-OMeTAD, CuI, Li-TFSI and TBP doped spiro-MeOTAD etc.)",
-    "HTL_type": "type of HTL material (aliases: HTM type) (e.g. small molecule, inorganic, polymer, hybrid, metal complex etc.) [text]",
-    "PCE": "best efficiency achieved for given HTM measure in % (aliases: PCE, performance, ƞ, ƞbest) [number]",
-    "V": "open circuit voltage  - value in a range from 0 to ~10 V, if in mV should be converted to V (aliases: Voc) [number]",
-    "J": "short circuit current - value in range from 0 to 50 mA/cm2 (aliases: Jsc) [number]",
-    "FF": "fill factor - value in % or in a range from 0 to 1 (aliases: FF) [number]"
+    "object_props": {
+        "HTL_name": "hole-transport layer material (aliases: HTM) (e.g. Spiro-OMeTAD, CuI, Li-TFSI and TBP doped spiro-MeOTAD etc.)",
+        "HTL_type": "type of HTL material (aliases: HTM type) (e.g. small molecule, inorganic, polymer, hybrid, metal complex etc.) [text]",
+        "PCE": "best efficiency achieved for given HTM measure in % (aliases: PCE, performance, ƞ, ƞbest) [number]",
+        "V": "open circuit voltage  - value in a range from 0 to ~10 V, if in mV should be converted to V (aliases: Voc) [number]",
+        "J": "short circuit current - value in range from 0 to 50 mA/cm2 (aliases: Jsc) [number]",
+        "FF": "fill factor - value in % or in a range from 0 to 1 (aliases: FF) [number]"
+    }
 }

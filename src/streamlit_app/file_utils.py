@@ -1,7 +1,6 @@
 from pathlib import Path
 
-import pandas as pd
-
+SCRIPT_PATH = Path(__file__).resolve().parent
 UPLOAD_FOLDER = "uploads"  # TODO use pathlib instead
 OUTPUT_FOLDER = "outputs"
 ALLOWED_PAPER_EXTENSIONS = {".pdf"}
@@ -9,6 +8,8 @@ ALLOWED_CONFIG_EXTENSIONS = {".json"}
 ERROR_MESSAGE_REJECT_EXTENSION = (
     "{} has wrong extension {}, it will be ignored. see list of allowed formats: {}"
 )
+upload_folder = SCRIPT_PATH / UPLOAD_FOLDER
+output_folder = SCRIPT_PATH / OUTPUT_FOLDER
 
 
 class InvalidFileExtension(Exception):
@@ -24,10 +25,3 @@ def upload_file_or_reject(uploaded_file, upload_folder) -> None:
         raise InvalidFileExtension(
             ERROR_MESSAGE_REJECT_EXTENSION.format(name, ext, ALLOWED_PAPER_EXTENSIONS)
         )
-
-
-def prepare_results_dataframe(output_folder, **kwargs) -> None:
-    _ = kwargs
-    # TODO: replace after having a data processing chain
-    result_df = pd.read_csv(output_folder / "result.csv")
-    return result_df

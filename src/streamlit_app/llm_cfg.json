@@ -1,0 +1,5 @@
+{
+    "verify_ssl_certs": false,
+    "model": "GigaChat-Pro",
+    "temperature": 0
+}
