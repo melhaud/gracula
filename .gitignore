@@ -161,4 +161,4 @@ cython_debug/
 
 # folders with files
 src/flask/uploads/
-src/streamlit/uploads/
+src/streamlit_app/uploads/
