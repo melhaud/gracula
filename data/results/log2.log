@@ -1,0 +1,385 @@
+../data/papers/2014/2014_1.pdf
+["CuI", "spiro-OMeTAD"]
+../data/papers/2014/2014_10.pdf
+["spiro-OMeTAD", "pp-spiro-OMeTAD", "pm-spiro-OMeTAD", "po-spiro-OMeTAD"]
+../data/papers/2014/2014_11.pdf
+["HTM1", "HTM2"]
+../data/papers/2014/2014_12.pdf
+["SGT-404", "SGT-405", "SGT-407", "spiro(OMeTAD"]
+../data/papers/2014/2014_13.pdf
+["X19", "X51", "Spiro-OMeTAD"]
+../data/papers/2014/2014_14.pdf
+["spiro-OMeTAD", "H111", "H112"]
+../data/papers/2014/2014_15.pdf
+["spiro-OMeTAD", "T103", "T102", "T101"]
+../data/papers/2014/2014_16.pdf
+["TPA-MeOPh", "FA-MeOPh"]
+../data/papers/2014/2014_17.pdf
+["OMeTPA-FA", "OMeTPA-TPA"]
+../data/papers/2014/2014_18.pdf
+["spiro-MeOTAD", "Fused-F"]
+../data/papers/2014/2014_19.pdf
+["Triazine-Th-OMeTPA", "Triazine-Ph-OMeTPA", "spiro-OMeTAD"]
+../data/papers/2014/2014_2.pdf
+["CuSCN"]
+../data/papers/2014/2014_20.pdf
+["spiro-OMeTAD"]
+../data/papers/2014/2014_21.pdf
+["spiro-MeOTAD"]
+../data/papers/2014/2014_22.pdf
+["spiro-OMeTAD"]
+../data/papers/2014/2014_23.pdf
+["spiro-OMeTAD"]
+../data/papers/2014/2014_24.pdf
+["poly(2,6-(4,4-bis(2-ethylhexyl)-4H-cyclopenta[2,1-b;3,4-b']dithiophene)alt-4,7-(2,1,3-benzothiadiazole)) (PCPDTBT)", "poly(3-hexylthiophene) (P3HT)"]
+../data/papers/2014/2014_25.pdf
+["spiro-OMeTAD"]
+../data/papers/2014/2014_26.pdf
+["TPBS", "TPBC"]
+../data/papers/2014/2014_27.pdf
+["TTF-1 (pristine)", "TTF-1 (doped)", "P3HT (pristine)", "P3HT (doped)", "spiro-OMeTAD"]
+../data/papers/2014/2014_28.pdf
+["H101", "spiro-OMeTAD"]
+../data/papers/2014/2014_29.pdf
+["PTAA", "PF8-TAA", "PIF8-TAA"]
+../data/papers/2014/2014_3.pdf
+["CuSCN", "spiro-OMeTAD"]
+../data/papers/2014/2014_30.pdf
+["P3HT", "P-TAA", "PIF8-TAA"]
+../data/papers/2014/2014_31.pdf
+["P3HT/SWNT(HiPco)", "P3HT/SWNT(HiPco)-PMMA", "P3HT/SWNT(CG200)-PMMA"]
+../data/papers/2014/2014_32.pdf
+["H-1", "H-2", "H-3"]
+../data/papers/2014/2014_33.pdf
+["P3HT"]
+../data/papers/2014/2014_34.pdf
+["CuSCN"]
+../data/papers/2014/2014_35.pdf
+["CH3NH3PbI3"]
+../data/papers/2014/2014_36.pdf
+["pristine HTM", "spiro-OMeTAD doped with LiTFSI and 4-tertbutylpyridine"]
+../data/papers/2014/2014_37.pdf
+["PFB", "TFB", "PFO", "spiro-OMeTAD"]
+../data/papers/2014/2014_38.pdf
+["spiro-OMeTAD", "KTM3"]
+../data/papers/2014/2014_39.pdf
+["DR3TBDTT", "spiro-MeOTAD"]
+../data/papers/2014/2014_4.pdf
+["spiro-MeOTAD"]
+../data/papers/2014/2014_40.pdf
+["2TPA-2-DP", "2TPA-3-DP", "2TPA-4-DP"]
+../data/papers/2014/2014_41.pdf
+["spiro-MeOTAD", "P3HT", "PDPPDBTE"]
+../data/papers/2014/2014_42.pdf
+["spiro(TFSI)2/tBP HTM", "conventional spiro-OMeTAD/tBP/LiTFSI HTM"]
+../data/papers/2014/2014_43.pdf
+["PTAA", "spiro-OMeTAD"]
+../data/papers/2014/2014_44.pdf
+["oligomer 1", "oligomer 2"]
+../data/papers/2014/2014_46.pdf
+["PTB-BO", "PTB-DCB21"]
+../data/papers/2014/2014_47.pdf
+["PCPDTBT", "PCDTBT", "PTA A"]
+../data/papers/2014/2014_48.pdf
+["2TPA-1-DP", "2TPA-2-DP", "2TPA-3-DP", "2TPA-4-DP", "Sp-A", "Sp-B"]
+../data/papers/2014/2014_49.pdf
+["HTM1"]
+../data/papers/2014/2014_5.pdf
+["CH3NH3PbI3"]
+../data/papers/2014/2014_6.pdf
+["HTMPfree CH 3NH 3PbI 3/TiO 2"]
+../data/papers/2014/2014_7.pdf
+["CH3NH3PbI3"]
+../data/papers/2014/2014_8.pdf
+["HTMfree CH 3NH 3PbI 3 solar cells", "carbon and Au3based CH 3NH 3PbI 3 solar cells"]
+../data/papers/2014/2014_9.pdf
+---------------------------------------------------------------------------
+ResponseError                             Traceback (most recent call last)
+Cell In[17], line 9
+      7 doc_chain = get_doc_chain(llm=giga, template=CONTEXT_BASED_Q_TEMPLATE, prompt=list_objects_prompt)
+      8 retrieve_chain = get_retrieval_chain(index=index, doc_chain=doc_chain)
+----> 9 response = retrieve_chain.invoke({"chat_history": chat_history, "input": LIST_OBJECTS_PROMPT.format(**dic)})
+     10 print(response["answer"])
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_core/runnables/base.py:4505, in RunnableBindingBase.invoke(self, input, config, **kwargs)
+   4499 def invoke(
+   4500     self,
+   4501     input: Input,
+   4502     config: Optional[RunnableConfig] = None,
+   4503     **kwargs: Optional[Any],
+   4504 ) -> Output:
+-> 4505     return self.bound.invoke(
+   4506         input,
+   4507         self._merge_configs(config),
+   4508         **{**self.kwargs, **kwargs},
+   4509     )
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_core/runnables/base.py:2493, in RunnableSequence.invoke(self, input, config)
+   2491 try:
+   2492     for i, step in enumerate(self.steps):
+-> 2493         input = step.invoke(
+   2494             input,
+   2495             # mark each step as a child run
+   2496             patch_config(
+   2497                 config, callbacks=run_manager.get_child(f"seq:step:{i+1}")
+   2498             ),
+   2499         )
+   2500 # finish the root run
+   2501 except BaseException as e:
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_core/runnables/passthrough.py:453, in RunnableAssign.invoke(self, input, config, **kwargs)
+    447 def invoke(
+    448     self,
+    449     input: Dict[str, Any],
+    450     config: Optional[RunnableConfig] = None,
+    451     **kwargs: Any,
+    452 ) -> Dict[str, Any]:
+--> 453     return self._call_with_config(self._invoke, input, config, **kwargs)
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_core/runnables/base.py:1619, in Runnable._call_with_config(self, func, input, config, run_type, **kwargs)
+   1615     context = copy_context()
+   1616     context.run(var_child_runnable_config.set, child_config)
+   1617     output = cast(
+   1618         Output,
+-> 1619         context.run(
+   1620             call_func_with_variable_args,  # type: ignore[arg-type]
+   1621             func,  # type: ignore[arg-type]
+   1622             input,  # type: ignore[arg-type]
+   1623             config,
+   1624             run_manager,
+   1625             **kwargs,
+   1626         ),
+   1627     )
+   1628 except BaseException as e:
+   1629     run_manager.on_chain_error(e)
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_core/runnables/config.py:347, in call_func_with_variable_args(func, input, config, run_manager, **kwargs)
+    345 if run_manager is not None and accepts_run_manager(func):
+    346     kwargs["run_manager"] = run_manager
+--> 347 return func(input, **kwargs)
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_core/runnables/passthrough.py:440, in RunnableAssign._invoke(self, input, run_manager, config, **kwargs)
+    427 def _invoke(
+    428     self,
+    429     input: Dict[str, Any],
+   (...)
+    432     **kwargs: Any,
+    433 ) -> Dict[str, Any]:
+    434     assert isinstance(
+    435         input, dict
+    436     ), "The input to RunnablePassthrough.assign() must be a dict."
+    438     return {
+    439         **input,
+--> 440         **self.mapper.invoke(
+    441             input,
+    442             patch_config(config, callbacks=run_manager.get_child()),
+    443             **kwargs,
+    444         ),
+    445     }
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_core/runnables/base.py:3138, in RunnableParallel.invoke(self, input, config)
+   3125     with get_executor_for_config(config) as executor:
+   3126         futures = [
+   3127             executor.submit(
+   3128                 step.invoke,
+   (...)
+   3136             for key, step in steps.items()
+   3137         ]
+-> 3138         output = {key: future.result() for key, future in zip(steps, futures)}
+   3139 # finish the root run
+   3140 except BaseException as e:
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/concurrent/futures/_base.py:456, in Future.result(self, timeout)
+    454     raise CancelledError()
+    455 elif self._state == FINISHED:
+--> 456     return self.__get_result()
+    457 else:
+    458     raise TimeoutError()
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/concurrent/futures/_base.py:401, in Future.__get_result(self)
+    399 if self._exception:
+    400     try:
+--> 401         raise self._exception
+    402     finally:
+    403         # Break a reference cycle with the exception in self._exception
+    404         self = None
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/concurrent/futures/thread.py:58, in _WorkItem.run(self)
+     55     return
+     57 try:
+---> 58     result = self.fn(*self.args, **self.kwargs)
+     59 except BaseException as exc:
+     60     self.future.set_exception(exc)
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_core/runnables/base.py:4505, in RunnableBindingBase.invoke(self, input, config, **kwargs)
+   4499 def invoke(
+   4500     self,
+   4501     input: Input,
+   4502     config: Optional[RunnableConfig] = None,
+   4503     **kwargs: Optional[Any],
+   4504 ) -> Output:
+-> 4505     return self.bound.invoke(
+   4506         input,
+   4507         self._merge_configs(config),
+   4508         **{**self.kwargs, **kwargs},
+   4509     )
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_core/runnables/base.py:2493, in RunnableSequence.invoke(self, input, config)
+   2491 try:
+   2492     for i, step in enumerate(self.steps):
+-> 2493         input = step.invoke(
+   2494             input,
+   2495             # mark each step as a child run
+   2496             patch_config(
+   2497                 config, callbacks=run_manager.get_child(f"seq:step:{i+1}")
+   2498             ),
+   2499         )
+   2500 # finish the root run
+   2501 except BaseException as e:
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_core/retrievers.py:194, in BaseRetriever.invoke(self, input, config, **kwargs)
+    175 """Invoke the retriever to get relevant documents.
+    176 
+    177 Main entry point for synchronous retriever invocations.
+   (...)
+    191     retriever.invoke("query")
+    192 """
+    193 config = ensure_config(config)
+--> 194 return self.get_relevant_documents(
+    195     input,
+    196     callbacks=config.get("callbacks"),
+    197     tags=config.get("tags"),
+    198     metadata=config.get("metadata"),
+    199     run_name=config.get("run_name"),
+    200     **kwargs,
+    201 )
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_core/retrievers.py:322, in BaseRetriever.get_relevant_documents(self, query, callbacks, tags, metadata, run_name, **kwargs)
+    320 except Exception as e:
+    321     run_manager.on_retriever_error(e)
+--> 322     raise e
+    323 else:
+    324     run_manager.on_retriever_end(
+    325         result,
+    326     )
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_core/retrievers.py:315, in BaseRetriever.get_relevant_documents(self, query, callbacks, tags, metadata, run_name, **kwargs)
+    313 _kwargs = kwargs if self._expects_other_args else {}
+    314 if self._new_arg_supported:
+--> 315     result = self._get_relevant_documents(
+    316         query, run_manager=run_manager, **_kwargs
+    317     )
+    318 else:
+    319     result = self._get_relevant_documents(query, **_kwargs)
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_core/vectorstores.py:697, in VectorStoreRetriever._get_relevant_documents(self, query, run_manager)
+    693 def _get_relevant_documents(
+    694     self, query: str, *, run_manager: CallbackManagerForRetrieverRun
+    695 ) -> List[Document]:
+    696     if self.search_type == "similarity":
+--> 697         docs = self.vectorstore.similarity_search(query, **self.search_kwargs)
+    698     elif self.search_type == "similarity_score_threshold":
+    699         docs_and_similarities = (
+    700             self.vectorstore.similarity_search_with_relevance_scores(
+    701                 query, **self.search_kwargs
+    702             )
+    703         )
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_community/vectorstores/faiss.py:530, in FAISS.similarity_search(self, query, k, filter, fetch_k, **kwargs)
+    510 def similarity_search(
+    511     self,
+    512     query: str,
+   (...)
+    516     **kwargs: Any,
+    517 ) -> List[Document]:
+    518     """Return docs most similar to query.
+    519 
+    520     Args:
+   (...)
+    528         List of Documents most similar to the query.
+    529     """
+--> 530     docs_and_scores = self.similarity_search_with_score(
+    531         query, k, filter=filter, fetch_k=fetch_k, **kwargs
+    532     )
+    533     return [doc for doc, _ in docs_and_scores]
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_community/vectorstores/faiss.py:402, in FAISS.similarity_search_with_score(self, query, k, filter, fetch_k, **kwargs)
+    378 def similarity_search_with_score(
+    379     self,
+    380     query: str,
+   (...)
+    384     **kwargs: Any,
+    385 ) -> List[Tuple[Document, float]]:
+    386     """Return docs most similar to query.
+    387 
+    388     Args:
+   (...)
+    400         L2 distance in float. Lower score represents more similarity.
+    401     """
+--> 402     embedding = self._embed_query(query)
+    403     docs = self.similarity_search_with_score_by_vector(
+    404         embedding,
+    405         k,
+   (...)
+    408         **kwargs,
+    409     )
+    410     return docs
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_community/vectorstores/faiss.py:154, in FAISS._embed_query(self, text)
+    152 def _embed_query(self, text: str) -> List[float]:
+    153     if isinstance(self.embedding_function, Embeddings):
+--> 154         return self.embedding_function.embed_query(text)
+    155     else:
+    156         return self.embedding_function(text)
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_community/embeddings/gigachat.py:184, in GigaChatEmbeddings.embed_query(self, text)
+    175 def embed_query(self, text: str) -> List[float]:
+    176     """Embed a query using a GigaChat embeddings models.
+    177 
+    178     Args:
+   (...)
+    182         Embeddings for the text.
+    183     """
+--> 184     return self.embed_documents(texts=[self.prefix_query + text])[0]
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/langchain_community/embeddings/gigachat.py:132, in GigaChatEmbeddings.embed_documents(self, texts)
+    130 # Call for last iteration
+    131 if local_texts:
+--> 132     for embedding in self._client.embeddings(
+    133         texts=local_texts, **embed_kwargs
+    134     ).data:
+    135         result.append(embedding.embedding)
+    137 return result
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/gigachat/client.py:216, in GigaChatSyncClient.embeddings(self, texts, model)
+    214 def embeddings(self, texts: List[str], model: str = "Embeddings") -> Embeddings:
+    215     """Возвращает эмбеддинги"""
+--> 216     return self._decorator(
+    217         lambda: post_embeddings.sync(self._client, access_token=self.token, input_=texts, model=model)
+    218     )
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/gigachat/client.py:199, in GigaChatSyncClient._decorator(self, call)
+    197 if self._check_validity_token():
+    198     try:
+--> 199         return call()
+    200     except AuthenticationError:
+    201         _logger.warning("AUTHENTICATION ERROR")
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/gigachat/client.py:217, in GigaChatSyncClient.embeddings.<locals>.<lambda>()
+    214 def embeddings(self, texts: List[str], model: str = "Embeddings") -> Embeddings:
+    215     """Возвращает эмбеддинги"""
+    216     return self._decorator(
+--> 217         lambda: post_embeddings.sync(self._client, access_token=self.token, input_=texts, model=model)
+    218     )
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/gigachat/api/post_embeddings.py:45, in sync(client, input_, model, access_token)
+     43 kwargs = _get_kwargs(input_=input_, model=model, access_token=access_token)
+     44 response = client.request(**kwargs)
+---> 45 return _build_response(response)
+
+File ~/miniforge3/envs/gigachat/lib/python3.12/site-packages/gigachat/api/post_embeddings.py:33, in _build_response(response)
+     31     raise AuthenticationError(response.url, response.status_code, response.content, response.headers)
+     32 else:
+---> 33     raise ResponseError(response.url, response.status_code, response.content, response.headers)
+
+ResponseError: (URL('https://gigachat.devices.sberbank.ru/api/v1/embeddings'), 500, b'{"status":500,"message":"Internal Server Error"}\n', Headers([('server', 'nginx'), ('date', 'Thu, 25 Apr 2024 08:13:53 GMT'), ('content-type', 'application/json; charset=utf-8'), ('content-length', '49'), ('connection', 'keep-alive'), ('access-control-allow-credentials', 'true'), ('access-control-allow-headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization'), ('access-control-allow-methods', 'GET, POST, DELETE, OPTIONS'), ('access-control-allow-origin', 'https://beta.saluteai.sberdevices.ru'), ('x-request-id', '924bb75a-2b43-4328-a04e-fd502912d6cf'), ('x-session-id', 'ef0b8cf0-87a4-453a-8780-25270ff65248'), ('allow', 'GET, POST'), ('strict-transport-security', 'max-age=31536000; includeSubDomains'), ('allow', 'GET, POST'), ('strict-transport-security', 'max-age=31536000; includeSubDomains')]))

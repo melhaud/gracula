@@ -1,0 +1,17 @@
+{
+    "object_type": "hole-transport material",
+    "object_properties": {
+        "HTL_name": "hole-transport layer material (aliases: HTM) (e.g. Spiro-OMeTAD, CuI, Li-TFSI and TBP doped spiro-MeOTAD etc.)",
+        "HTL_type": "type of HTL material (aliases: HTM type) (e.g. small molecule, inorganic, polymer, hybrid, metal complex etc.) [text]",
+        "PCE": "best efficiency achieved for given HTM measure in % (aliases: PCE, performance, ƞ, ƞbest) [number]",
+        "V": "open circuit voltage  - value in a range from 0 to ~10 V, if in mV should be converted to V (aliases: Voc) [number]",
+        "J": "short circuit current - value in range from 0 to 50 A/cm2 (aliases: Jsc) [number]",
+        "FF": "fill factor - value in % or in a range from 0 to 1 (aliases: FF) [number]",
+        "stability": "stability test results, if any; if the results may be in a figure provide figure number [text]",
+        "solvent": "type of solvent used for HTM deposition; if solution deposition method is not used, write 'N/A' [text]",
+        "formula-p": "perovskite formula (e.g. MAPbBr3) [text]",
+        "deposition": "deposition method of perovskite (e.g. single-stage, two-stage etc.) [text]",
+        "annealing-schedule-p": "annealing schedule of perovskite [text]",
+        "annealing-schedule-htl": "annealing schedule of HTL [text]"
+    }
+}
