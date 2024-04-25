@@ -1,1 +1,0 @@
-Here lie all the files related to flask application.

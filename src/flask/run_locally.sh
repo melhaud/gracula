@@ -1,0 +1,1 @@
+flask run --port 4400 --debug

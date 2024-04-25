@@ -1,33 +1,42 @@
-#from flask_frozen import Freezer
-from flask import Flask, render_template, send_file
-import json
+from flask import Flask, render_template, send_file, request, flash, redirect, url_for
+from werkzeug.utils import secure_filename
+import os
 
-DEBUG = True
-FLATPAGES_AUTO_RELOAD = DEBUG
-FLATPAGES_EXTENSION = '.md'
-FLATPAGES_ROOT = 'content'
-POST_DIR = 'posts'
+UPLOAD_FOLDER = "./uploads" # TODO use pathlib instead
+OUTPUT_FOLDER = "./outputs"
+ALLOWED_EXTENSIONS = {'pdf', 'json'}
 
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER
+
+def allowed_file(filename):
+    return '.' in filename and \
+        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 @app.route("/")
+def upload():
+    return render_template("upload.html")
 
-def index():
-    with open("settings.txt", encoding="utf8") as base_config:
-        data = base_config.read()
-        settings = json.loads(data)
+@app.route("/upload", methods=["POST"])
+def upload_files():
+    uploaded_files = request.files.getlist("files[]")
 
-    # variables = {
-    #     "title" : "Gracula Project",
-    #     "description" : "Gracula🧛‍♂️🧛‍♀️ is an AI-agent-based scientific papers extractor. It uses GigaChat API to analyse user-uploaded PDF files and build a compilation table dataset out of them.",
-    #     "keywords" : "scientific parser, gigachat"
-    # }
-    return render_template("index.html", bigheader=True, **settings)
+    for file in uploaded_files:
+        if file.filename == "":
+            return "No files selected"
+        if not allowed_file(file.filename):
+            return "File format should be PDF"
+        
+        file.save("uploads/" + file.filename)
+
+    return "Upload successful!"
 
 @app.route("/download")
 def download_file():
-    filepath = "./outputs/output.csv"
-    return send_file(filepath, as_attachment=True)
+    path = "output.csv"
+    filename = app.config['OUTPUT_FOLDER'] + "/" + path
+    return send_file(filename, as_attachment=True)
 
 if __name__ == "__main__":
     app.run(debug=True)
