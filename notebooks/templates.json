@@ -1,0 +1,9 @@
+{
+    "CONTEXT_BASED_Q_TEMPLATE" : "\"Answer the following question based only on the provided context: \n
+<context> \n
+{context} \n
+</context> \n
+\n
+Question: {input}
+\""
+}
