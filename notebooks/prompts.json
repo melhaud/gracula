@@ -1,0 +1,5 @@
+{
+    "SYSTEM_PROMPT" : "Imagine that you are an experienced materials scientist specializing in the search for new materials. You need to find a material that will be superior to existing analogues in a number of key characteristics. Your goal is to conduct virtual screening of a large number of substances, predict their properties using various machine learning methods, and select the most promising compounds for further research.",
+    "LIST_OBJECTS_PROMPT" : "Please list all the {object_type}s for which device efficiency results are given in this paper. Use python list format and names of HTM that were originally given by authors. For example, [\"HTM1\", \"HTM2\", \"HTM3\"]",
+    "MAKE_MD_TABLE_PROMPT" : "Construct a table. Rows correspond to each of {object_type}s, columns correspond to fields specified in order given in the json below. The table should be in markdown format table. The json: ```\n{json}\n```"
+}
