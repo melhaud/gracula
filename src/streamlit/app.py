@@ -2,7 +2,7 @@
 
 import streamlit as st
 import pandas as pd
-import pathlib
+from pathlib import Path
 
 # Try demo - https://gigachat-streaming.streamlit.app/
 
@@ -89,7 +89,7 @@ with st.sidebar:
 uploaded_files = st.file_uploader(
     "Choose PDF files to upload", accept_multiple_files=True
 )
-upload_folder = pathlib.Path("./uploads/")
+upload_folder = Path(__file__).resolve().parent / "uploads/"
 for uploaded_file in uploaded_files:
     with open(upload_folder / uploaded_file.name, "wb") as f:
         f.write(uploaded_file.read())
@@ -106,7 +106,7 @@ chat = GigaChat(
 )
 
 result_df = pd.read_csv(
-    "./downloads/result.csv"
+    Path(__file__).resolve().parent / "downloads/result.csv"
 )  # TODO: replace after having a data processing chain
 
 
