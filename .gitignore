@@ -160,7 +160,7 @@ cython_debug/
 #.idea/
 
 # folders with files
-src/flask/uploads/
-src/streamlit_app/uploads/
+# src/flask/uploads/
+# src/streamlit_app/uploads/
 
 environment.yaml
