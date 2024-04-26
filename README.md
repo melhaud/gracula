@@ -1,19 +1,20 @@
 # 📙 Description
 
-Gracula🧛‍♂️🧛‍♀️ is an AI-agent-based scientific papers extractor. It uses GigaChat API to analyse user-uploaded PDF files and build a compilation table dataset out of them.
+Gracula🧛‍♂️🧛‍♀️ is an AI-agent-based scientific papers extractor. It uses GigaChat API to analyse user-uploaded PDF files and build a compilation table dataset out of them. [Accessible on Sreamlit.](https://gracula.streamlit.app/)
 
-# ⚙️ How to install 
+# ⚙️ How to install
+If one needs to deploy a local solution, there are the stages below.
 
-```conda create env --file requirements.txt```
+After cloning the repository, run in a root directory `gracula` to install essential packages.
+```pip install requirements.txt```
 
 # ☀️ How to use
 
 ## 🌱 how to open interface
-Once requirements have been installed, the website should open locally with Flask.
-### give execution rights to the running script
-```chmod +x run_locally.sh```
-### run the script from the root `gracula` folder
-```./run_locally.sh```
+Once requirements have been installed, the website should open locally with Streamlit on the port specified.
+```streamlit run "/src/streamlit_app/app.py" --server.port ####```
 
+Once deployed, one needs to share the GigaChat credentials in the field `GIGACHAT_CREDENTIALS` in order to use GigaChat API.
 
-## 🌱 instructions how to use interface
+# 🔗 Share
+If you find this project useful, consider citing this repository. We are longing for your feedback! 🧛‍♂️🧛‍♀️
