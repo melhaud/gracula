@@ -16,7 +16,7 @@ Once requirements have been installed, the website should open locally with Stre
 
 ```streamlit run "/src/streamlit_app/app.py" --server.port ####```
 
-Once deployed, one needs to share the GigaChat credentials in the field `GIGACHAT_CREDENTIALS` in order to use GigaChat API.
+Once deployed, one needs to share the GigaChat credentials in the field `GIGACHAT_CREDENTIALS` in order to use [GigaChat API](https://developers.sber.ru/docs/ru/gigachat/api/overview).
 
 # 🔗 Share
 If you find this project useful, consider citing this repository. We are longing for your feedback! 🧛‍♂️🧛‍♀️
