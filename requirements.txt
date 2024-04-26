@@ -1,12 +1,9 @@
-# _libgcc_mutex==0.1
-# _openmp_mutex==4.5
-# bzip2==1.0.8
-# ca-certificates==2024.2.2
 python==3.12
 gigachain
-gigachain-community
-gigachain-core
-gigachain-text-splitters
+faiss-cpu
+# gigachain-community
+# gigachain-core
+# gigachain-text-splitters
 streamlit
 pypdf2
 pandas
