@@ -6,12 +6,14 @@ Gracula🧛‍♂️🧛‍♀️ is an AI-agent-based scientific papers extract
 If one needs to deploy a local solution, there are the stages below.
 
 After cloning the repository, run in a root directory `gracula` to install essential packages.
+
 ```pip install requirements.txt```
 
 # ☀️ How to use
 
 ## 🌱 how to open interface
 Once requirements have been installed, the website should open locally with Streamlit on the port specified.
+
 ```streamlit run "/src/streamlit_app/app.py" --server.port ####```
 
 Once deployed, one needs to share the GigaChat credentials in the field `GIGACHAT_CREDENTIALS` in order to use GigaChat API.
