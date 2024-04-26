@@ -5,7 +5,7 @@ Gracula🧛‍♂️🧛‍♀️ is an AI-agent-based scientific papers extract
 # ⚙️ How to install
 If one needs to deploy a local solution, there are the stages below.
 
-After cloning the repository, run in a root directory `gracula` to install essential packages.
+After cloning the repository, run the code below in a root directory `gracula` to install essential packages.
 
 ```pip install requirements.txt```
 
